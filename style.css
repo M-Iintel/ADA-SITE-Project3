@@ -12,3 +12,21 @@
     background-color: #ff1313;
     color: #fff;
 }
+#social-icons {
+    display: flex;
+    gap: 10px;
+}
+#social-icons li {
+    list-style: none;
+}
+#social-icons li a {
+    text-decoration: none;
+    color: #fff;
+    width: auto;
+    height: auto;
+} 
+#headerTopIcons img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
