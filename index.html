@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="headerTop">
-      <h3>Ibrahim Mirhashimov's Portfolio</h3>
+      <a
+        href="index.html"
+        target="_self"
+        aria-label="Home Page"
+        style="text-decoration: none; color: #fff"
+      >
+        <h3>Ibrahim Mirhashimov's Portfolio</h3>
+      </a>
 
       <ul id="social-icons">
         <li>
           <a
-          id="headerTopIcons"
+            id="headerTopIcons"
             href="https://www.linkedin.com/in/ibrahim-mirhashimov-726733387 "
-            target="self"
+            target="_blank"
             aria-label="LinkedIn Profile"
           >
             <img src="./Images/cib--linkedin.svg" alt="LinkedIn" />
@@ -23,20 +34,175 @@
         </li>
 
         <li>
-          <a id="headerTopIcons" 
-          href="https://github.com/M-Iintel" target="_self" aria-label="GitHub Profile">
+          <a
+            id="headerTopIcons"
+            href="https://github.com/M-Iintel"
+            target="_blank"
+            aria-label="GitHub Profile"
+          >
             <img src="./Images/bytesize--github.svg" alt="GitHub" />
           </a>
         </li>
 
         <li>
           <a
-          id="headerTopIcons"
-           href="mailto:ibrahimmirhashimov@gmail.com" aria-label="Send an Email">
-          <img src="./Images/tabler--mail-filled.svg" alt="Gmail" />
+            id="headerTopIcons"
+            href="mailto:ibrahimmirhashimov@gmail.com"
+            target="_blank"
+            aria-label="Send an Email"
+          >
+            <img src="./Images/tabler--mail-filled.svg" alt="Gmail" />
+          </a>
+        </li>
+        <li>
+          <a id="headerTopIcons" href="search.html" aria-label="Search Page">
+            <img
+              class="search-icon"
+              src="./Images/material-symbols--search-rounded.svg"
+              alt="Search"
+            />
           </a>
         </li>
       </ul>
+    </div>
+    <div class="profile-card">
+      <img
+        class="profile-photo"
+        src="./Images/your-photo.jpg"
+        alt="Your Name"
+      />
+      <h1>Ibrahim Mirhashimov</h1>
+      <p>Short bio: who you are, what you do, etc.</p>
+    </div>
+
+    <div class="around-web">
+      <h2>Around the Web</h2>
+
+      <div class="web-tables">
+        <table>
+          <thead>
+            <tr>
+              <th>Social</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://mastodon.social/@anthony@ciccarello.me" target="_blank" class="social-link">
+                  <span class="img-bg">
+                    <img src="./Images/mastodon.svg" alt="Mastodon" />
+                  </span>
+                  <span class="social-text">Mastodon/Fediverse</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://bsky.app/profile/ciccarello.me" target="_blank" class="social-link">
+                  <span class="img-bg">
+                    <img src="./Images/bluesky.svg" alt="Bluesky" />
+                  </span>
+                  <span class="social-text">Bluesky</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://linkedin.com/in/ibrahim-mirhashimov-726733387" target="_blank" class="social-link">
+                  <span class="img-bg">
+                    <img src="./Images/cib--linkedin.svg" alt="LinkedIn" />
+                  </span>
+                  <span class="social-text">LinkedIn</span>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <!-- PROFESSIONAL TABLE -->
+        <table>
+          <thead>
+            <tr>
+              <th>Professional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                  <span class="img-bg">
+                    <img src="./Images/github.svg" alt="GitHub" />
+                  </span>
+                  <span class="social-text">GitHub</span>
+                </a> – Code repository
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://stackoverflow.com/users/yourid" target="_blank" class="social-link">
+                  <span class="img-bg">
+                    <img src="./Images/stackoverflow.svg" alt="Stack Overflow" />
+                  </span>
+                  <span class="social-text">Stack Overflow</span>
+                </a> – Software Q & A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.npmjs.com/~yourusername" target="_blank" class="social-link">
+                  <span class="img-bg">
+                    <img src="./Images/npm.svg" alt="npm" />
+                  </span>
+                  <span class="social-text">npm</span>
+                </a> – Package manager
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <!-- NATURE TABLE -->
+        <table>
+          <thead>
+            <tr>
+              <th>Nature</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ebird.org" target="_blank" class="social-link">
+                  <span class="img-bg">
+                    <img src="./Images/ebird.svg" alt="eBird" />
+                  </span>
+                  <span class="social-text">eBird</span>
+                </a> – Bird sightings
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.inaturalist.org" target="_blank" class="social-link">
+                  <span class="img-bg">
+                    <img src="./Images/inaturalist.svg" alt="iNaturalist" />
+                  </span>
+                  <span class="social-text">iNaturalist</span>
+                </a> – Nature sightings
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="cards-section">
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>Short description of project 1.</p>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>Short description of project 2.</p>
+      </div>
+      <!-- Add more cards/sections as you like -->
     </div>
   </body>
 </html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="style.css" /> 
+</head>
+
+<body>
+
+    <!-- SAME HEADER AS YOUR MAIN SITE -->
+    <div id="headerTop">
+        <a id = "back-arrow" href="index.html" target="_self" aria-label="Home Page" style="text-decoration: none; color: #fff;">
+            <img src="./Images/ri--arrow-go-back-line.svg" alt="Back" />
+            <span>Ibrahim Mirhashimov's Portfolio</span>
+        </a>
+
+        <ul id="social-icons">
+            <li>
+                <a id="headerTopIcons"
+                   href="https://www.linkedin.com/in/ibrahim-mirhashimov-726733387"
+                   target="self"
+                   aria-label="LinkedIn Profile">
+                    <img src="./Images/cib--linkedin.svg" alt="LinkedIn" />
+                </a>
+            </li>
+
+            <li>
+                <a id="headerTopIcons"
+                   href="https://github.com/M-Iintel"
+                   target="_self"
+                   aria-label="GitHub Profile">
+                    <img src="./Images/bytesize--github.svg" alt="GitHub" />
+                </a>
+            </li>
+
+            <li>
+                <a id="headerTopIcons"
+                   href="mailto:ibrahimmirhashimov@gmail.com"
+                   aria-label="Send an Email">
+                   <img src="./Images/tabler--mail-filled.svg" alt="Gmail" />
+                </a>
+            </li>
+
+            <!-- Search icon — disabled link because already on the search page -->
+            <li>
+                <a id="headerTopIcons" href="#" aria-label="Search Page">
+                    <img class="search-icon" src="./Images/material-symbols--search-rounded.svg" alt="Search" />
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- SEARCH PAGE CONTENT -->
+    <div class="search-container">
+        <h1>Search the Web</h1>
+
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input 
+                type="text" 
+                name="q" 
+                class="search-input" 
+                placeholder="Search anything..."
+                required
+            />
+            <button class="search-btn" type="submit">Search</button>
+        </form>
+    </div>
+
+</body>
+</html>

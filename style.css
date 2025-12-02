@@ -3,30 +3,226 @@
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
-  }
+}
+
+body {
+    background-color: #150b03;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
 #headerTop {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #ff1313;
+    background-color: rgb(175, 30, 11);
     color: #fff;
 }
+
 #social-icons {
     display: flex;
-    gap: 10px;
+    gap: 22px;
 }
+
 #social-icons li {
     list-style: none;
 }
+
 #social-icons li a {
     text-decoration: none;
     color: #fff;
-    width: auto;
-    height: auto;
-} 
-#headerTopIcons img{
-    width: 25px;
-    height: 25px;
+}
+
+#headerTopIcons img,
+.search-icon {
+    width: 35px;
+    height: 35px;
     object-fit: cover;
+    transition: transform 0.25s ease, opacity 0.25s ease, filter 0.25s ease;
+}
+
+#headerTopIcons img:hover,
+.search-icon:hover {
+    transform: scale(1.2) rotate(4deg);
+    opacity: 0.85;
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.5));
+}
+
+.profile-card {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #555;
+    margin-bottom: 20px;
+}
+
+.profile-card h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    font-size: 1rem;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.links-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.links-list {
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.links-list li a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border: 1px solid #1e90ff;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.links-list li a:hover {
+    background: #1e90ff;
+    color: #fff;
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    transition: transform 0.2s, background 0.2s;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.card p {
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,0.1);
+}
+
+.around-web {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.around-web h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.web-tables {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.web-tables table {
+    border-collapse: separate;
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgb(96, 95, 95);
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 200px;
+    max-width: 280px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.web-tables th {
+    background: transparent;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Lora', serif;
+    font-weight: 400;   
+    }
+
+.web-tables td {
+    padding: 12px 10px;
+    text-align: left;
+}
+
+/* .web-tables td a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.2s;
+} */
+.web-tables td a,
+.web-tables td a span {
+    text-decoration: none; /* removes underline */
+    color: #fff;           /* ensures text color stays white */
+}
+
+.web-tables td a:hover {
+    color: #ff6347;
+}
+
+.social-link {
+    display: inline-flex;       /* makes icon and text align horizontally */
+    align-items: center;        /* vertically centers the text with the icon */
+    gap: 8px;                   /* space between image and text */
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.img-bg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9ea0a1; 
+    padding: 6px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-bg img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover .img-bg {
+    transform: scale(1.2) rotate(10deg);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+
+.social-text {
+    display: inline-block;
 }
